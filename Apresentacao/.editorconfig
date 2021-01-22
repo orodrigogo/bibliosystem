@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# IDE0067: Descartar objetos antes de perder o escopo
+dotnet_diagnostic.IDE0067.severity = suggestion

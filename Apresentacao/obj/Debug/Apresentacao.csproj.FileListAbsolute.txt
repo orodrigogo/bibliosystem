@@ -1,0 +1,13 @@
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\bin\Debug\Apresentacao.exe
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\bin\Debug\Apresentacao.pdb
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\obj\Debug\Apresentacao.csprojAssemblyReference.cache
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\obj\Debug\Apresentacao.FrmLogin.resources
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\obj\Debug\Apresentacao.Properties.Resources.resources
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.cache
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\obj\Debug\Apresentacao.exe
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\obj\Debug\Apresentacao.pdb
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\obj\Debug\Apresentacao.FrmHome.resources
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\obj\Debug\Apresentacao.FrmLivroCadastro.resources
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\obj\Debug\Apresentacao.FrmLivroPesquisar.resources
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\obj\Debug\Apresentacao.FrmUsuarioCadastro.resources
