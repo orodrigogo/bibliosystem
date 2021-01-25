@@ -1,0 +1,10 @@
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\RegrasNegocio\bin\Debug\RegrasNegocio.dll
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\RegrasNegocio\bin\Debug\RegrasNegocio.pdb
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\RegrasNegocio\bin\Debug\AcessoDados.dll
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\RegrasNegocio\bin\Debug\Objetos.dll
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\RegrasNegocio\bin\Debug\AcessoDados.pdb
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\RegrasNegocio\bin\Debug\Objetos.pdb
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\RegrasNegocio\obj\Debug\RegrasNegocio.csprojAssemblyReference.cache
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\RegrasNegocio\obj\Debug\RegrasNegocio.csproj.CopyComplete
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\RegrasNegocio\obj\Debug\RegrasNegocio.dll
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\RegrasNegocio\obj\Debug\RegrasNegocio.pdb

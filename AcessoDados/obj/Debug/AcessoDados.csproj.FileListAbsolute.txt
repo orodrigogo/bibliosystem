@@ -1,0 +1,5 @@
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\AcessoDados\bin\Debug\AcessoDados.dll
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\AcessoDados\bin\Debug\AcessoDados.pdb
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\AcessoDados\obj\Debug\AcessoDados.csprojAssemblyReference.cache
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\AcessoDados\obj\Debug\AcessoDados.dll
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\AcessoDados\obj\Debug\AcessoDados.pdb

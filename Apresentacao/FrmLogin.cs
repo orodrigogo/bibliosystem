@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using RegrasNegocio;
+using Objetos;
 
 namespace Apresentacao
 {
@@ -24,9 +19,18 @@ namespace Apresentacao
 
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
-            FrmHome frmHome = new FrmHome();
-            frmHome.Show();
-            Hide();
+            try
+            {
+                UsuarioRegrasNegocio usuarioRegrasNegocio = new UsuarioRegrasNegocio();
+                usuarioRegrasNegocio.Entrar(txtEmail.Text, txtSenha.Text);
+
+                FrmHome frmHome = new FrmHome();
+                frmHome.Show();
+                Hide();
+            }catch(Exception erro)
+            {
+                MessageBox.Show(erro.Message);
+            }
         }
     }
 }

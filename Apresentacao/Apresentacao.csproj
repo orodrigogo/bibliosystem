@@ -162,5 +162,15 @@
   <ItemGroup>
     <None Include="Resources\show.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Objetos\Objetos.csproj">
+      <Project>{3a73b375-beb0-4f88-add5-d3a47ae3d692}</Project>
+      <Name>Objetos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RegrasNegocio\RegrasNegocio.csproj">
+      <Project>{30e5b6db-081c-4415-91a2-15bfc9aa2bd8}</Project>
+      <Name>RegrasNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

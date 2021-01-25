@@ -1,0 +1,5 @@
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Objetos\bin\Debug\Objetos.dll
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Objetos\bin\Debug\Objetos.pdb
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Objetos\obj\Debug\Objetos.csprojAssemblyReference.cache
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Objetos\obj\Debug\Objetos.dll
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Objetos\obj\Debug\Objetos.pdb
