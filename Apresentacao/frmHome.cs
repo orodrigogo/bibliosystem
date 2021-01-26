@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using RegrasNegocio;
+using Objetos;
 
 namespace Apresentacao
 {
@@ -58,8 +53,36 @@ namespace Apresentacao
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            FrmUsuarioCadastro frmUsuarioCadastro = new FrmUsuarioCadastro();
-            AbrirTela(frmUsuarioCadastro);
+            FrmUsuarioPesquisar frmUsuarioPesquisar = new FrmUsuarioPesquisar("Funcionário");
+            AbrirTela(frmUsuarioPesquisar);
+        }
+
+        private void FrmHome_Load(object sender, EventArgs e)
+        {
+            UsuarioRegrasNegocio usuarioRegrasNegocio = new UsuarioRegrasNegocio();
+            Usuario usuario = usuarioRegrasNegocio.UsuarioLogado();
+
+            lblUsuarioNome.Text = $"Olá, {usuario.Nome}";
+
+            if (usuario.Perfil == "Funcionário")
+            {
+                btnUsuarios.Visible = false;
+                btnConfiguracoes.Visible = false;
+            }else if (usuario.Perfil == "Consulta")
+            {                
+                btnEmprestimos.Visible = false;
+                btnReservas.Visible = false;
+                btnPagamentos.Visible = false;
+                btnClientes.Visible = false;
+                btnUsuarios.Visible = false;
+                btnConfiguracoes.Visible = false;
+            }
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            FrmUsuarioPesquisar frmUsuarioPesquisar = new FrmUsuarioPesquisar("Cliente");
+            AbrirTela(frmUsuarioPesquisar);
         }
     }
 }

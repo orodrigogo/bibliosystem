@@ -19,18 +19,38 @@ namespace Apresentacao
 
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
+            Entrar();
+        }
+
+        private void Entrar()
+        {
             try
             {
-                UsuarioRegrasNegocio usuarioRegrasNegocio = new UsuarioRegrasNegocio();
-                usuarioRegrasNegocio.Entrar(txtEmail.Text, txtSenha.Text);
+                if (String.IsNullOrWhiteSpace(txtEmail.Text))
+                    MessageBox.Show("Digite o e-mail");
+                else if
+                    (String.IsNullOrWhiteSpace(txtSenha.Text))
+                    MessageBox.Show("Digite a senha");
+                else
+                {
+                    UsuarioRegrasNegocio usuarioRegrasNegocio = new UsuarioRegrasNegocio();
+                    usuarioRegrasNegocio.Entrar(txtEmail.Text, txtSenha.Text);
 
-                FrmHome frmHome = new FrmHome();
-                frmHome.Show();
-                Hide();
-            }catch(Exception erro)
+                    FrmHome frmHome = new FrmHome();
+                    frmHome.Show();
+                    Hide();
+                }
+            }
+            catch (Exception erro)
             {
                 MessageBox.Show(erro.Message);
             }
+        }
+
+        private void txtSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                Entrar();
         }
     }
 }

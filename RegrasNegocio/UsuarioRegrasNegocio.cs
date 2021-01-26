@@ -30,7 +30,7 @@ namespace RegrasNegocio
             }         
         }
 
-        public Usuario Entrar(string email, string senha)
+        public void Entrar(string email, string senha)
         {
             try
             {
@@ -48,15 +48,45 @@ namespace RegrasNegocio
                 if (dataTable.Rows.Count == 0)
                     throw new Exception("E-mail ou senha inválido");
 
-                Usuario usuario = new Usuario();
-                usuario.Cpf = dataTable.Rows[0]["cpf"].ToString();
-                usuario.Nome = dataTable.Rows[0]["nome"].ToString();
-                usuario.Email = dataTable.Rows[0]["email"].ToString();
-                usuario.Perfil = dataTable.Rows[0]["perfil"].ToString();
 
-                // Salvar os dados do usuário nas configs globais para utilizar em qualquer lugar.
+                Properties.Settings.Default.usuarioNome = dataTable.Rows[0]["nome"].ToString();
+                Properties.Settings.Default.usuarioEmail = dataTable.Rows[0]["email"].ToString();
+                Properties.Settings.Default.usuarioPerfil = dataTable.Rows[0]["perfil"].ToString();
+                Properties.Settings.Default.Save();                                        
+            }
+            catch (Exception erro)
+            {
+                throw new Exception(erro.Message);
+            }
+        }
 
-                return usuario;                
+        public Usuario UsuarioLogado()
+        {
+            Usuario usuario = new Usuario();
+            usuario.Nome = Properties.Settings.Default.usuarioNome;
+            usuario.Email = Properties.Settings.Default.usuarioEmail;
+            usuario.Perfil = Properties.Settings.Default.usuarioPerfil;
+
+            return usuario;
+        }
+
+        public DataTable Pesquisar(string valor, string filtro, string perfil)
+        {
+            try
+            {
+                AcessoDadosSQLServer acessoDadosSQLServer = new AcessoDadosSQLServer();
+                SqlCommand sqlCommand = new SqlCommand("sp_usuario_pesquisar", acessoDadosSQLServer.Conectar());
+                sqlCommand.CommandType = CommandType.StoredProcedure;
+
+                sqlCommand.Parameters.AddWithValue("@valor", valor);
+                sqlCommand.Parameters.AddWithValue("@filtro", filtro);
+                sqlCommand.Parameters.AddWithValue("@perfil", perfil);
+
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommand);
+                DataTable dataTable = new DataTable();
+                dataAdapter.Fill(dataTable);
+
+                return dataTable;
             }
             catch (Exception erro)
             {

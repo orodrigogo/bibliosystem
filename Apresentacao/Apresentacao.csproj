@@ -76,6 +76,12 @@
     <Compile Include="FrmUsuarioCadastro.Designer.cs">
       <DependentUpon>FrmUsuarioCadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmUsuarioPesquisar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarioPesquisar.Designer.cs">
+      <DependentUpon>FrmUsuarioPesquisar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmHome.resx">
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUsuarioCadastro.resx">
       <DependentUpon>FrmUsuarioCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarioPesquisar.resx">
+      <DependentUpon>FrmUsuarioPesquisar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

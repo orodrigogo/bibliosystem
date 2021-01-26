@@ -7,9 +7,18 @@ namespace Apresentacao
 {
     public partial class FrmUsuarioCadastro : Form
     {
-        public FrmUsuarioCadastro()
+        public FrmUsuarioCadastro(string tipo)
         {
             InitializeComponent();
+            lblTitulo.Text = tipo;
+            
+            if (tipo == "Cliente")
+            {
+                cbxPerfil.Items.Add("Cliente");
+                cbxPerfil.SelectedItem = "Cliente";
+                cbxPerfil.Enabled = false;
+            }
+
         }
 
         private void BtnMostrarSenha_Click(object sender, EventArgs e)

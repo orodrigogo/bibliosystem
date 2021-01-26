@@ -18,3 +18,5 @@ C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\bin\
 C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\bin\Debug\RegrasNegocio.pdb
 C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\bin\Debug\AcessoDados.pdb
 C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\obj\Debug\Apresentacao.csproj.CopyComplete
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\bin\Debug\RegrasNegocio.dll.config
+C:\Users\rodrigo.gsantana1\Documents\bibliosystem\bibliosystem\Apresentacao\obj\Debug\Apresentacao.FrmUsuarioPesquisar.resources
